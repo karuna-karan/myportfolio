@@ -22,6 +22,7 @@ html body{
     width: 100%;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.1s ease-in-out 0.1s;
 }
 
 .navbar{
@@ -118,7 +119,18 @@ html body{
     height: 46px;
     width: 180px;
     border-radius: 30px;
-    transition: all 0.28s;
+    transition: all 0.15s;
+}
+
+.project_button:hover{
+    color:white ;
+    background-color: rgb(254, 0, 0) ;
+    border-color: white ;
+    opacity: 0.6;
+}
+
+.project_button:active{
+    opacity: 1;
 }
 
 #project_section{
@@ -498,14 +510,7 @@ html body{
         margin-left: 10px;
     }
 }
-@media (min-width: 1200px) {
-    .project_view_button:hover{
-    background-color: rgb(14, 103, 245);
-    color: white;
-    border-color: white ;
-    }
 
-}
 
 
 

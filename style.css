@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html body{
+    font-family:  "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.scroll-on{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar{
+     align-items: center;
+}
+
+.navbar-head h1 span{
+    color: rgb(254, 0, 0);
+}
+
+.navbar-head h1{
+    padding-left: 50px ;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navbar a{
+    color: black;
+}
+
+.navbar-details ul{
+    margin-right: 30px;
+}
+
+.navbar-details ul li{
+     margin: 0px 30px;
+}
+
+
+.navbar-details ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.25s;
+}
+
+.navbar-details ul li a:hover{
+    color:  rgb(254, 0, 0);
+}
+
+
+
+
+.profile_img img{
+    height: 500px;
+    width: 500px;
+    box-shadow: 10px 10px 70px rgba(0, 0, 0, 0.25);
+    border: 0 solid;
+    border-radius: 60%;
+    margin-top: 70px;
+    margin-left: 80px;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+#home_section{
+    background-color: white;
+    padding-top: 10%;
+}
+
+.scroll-pad{
+    padding-top:8%;
+}
+.home_details{
+    margin-top: 200px;
+    margin-left: 80px;
+    animation-name: animae;
+    animation-duration: 2s;
+}
+
+.home_details p{
+    font-size: 30px;
+}
+
+.home_details h1{
+    font-size: 90px;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.home_details h1 span{
+    color: rgb(254, 0, 0);   
+}
+
+.home_details h3{
+    font-size: 40px;
+}
+
+.project_button{
+    margin-top: 30px ;
+    border: 2px solid rgb(254, 0, 0) ;
+    background-color: rgb(255, 255, 255);
+    color:rgb(254, 0, 0) ;
+    height: 46px;
+    width: 180px;
+    border-radius: 30px;
+    transition: all 0.28s;
+}
+
+.project_button:active{
+    color:white ;
+    background-color: rgb(254, 0, 0) ;
+    border-color: white ;
+}
+
+
+
+#project_section{
+    padding-top: 10%;
+    margin: 30px 0px;
+    background-color: white;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+#project_section .card{
+    position: static;
+}
+
+.project_details{
+    padding-top: 40px;
+}
+
+.project_view_button{
+    background-color: white;
+    border:2px solid black;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: black;
+    transition: all 0.15s;
+}
+
+.project_view_button:hover{
+    background-color: rgb(14, 103, 245);
+    color: white;
+    border-color: white ;
+}
+
+.heading {
+    padding: 20px 0px;
+}
+
+.heading h1{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+
+
+#about_section{
+    padding-top: 7%;
+}
+
+.about_para{
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+
+
+#about_section img{
+    height: 480px;
+    width: 480px;
+    border-radius: 3%;
+    margin-left: 150px;
+    margin-top: -25px;
+    transition: all 0.15s;
+}
+
+#about_section img:hover{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.about_heading{
+    margin-bottom: 50px;
+}
+
+#skill_section{
+    padding-top: 10%;
+}
+
+.skill_part{
+    margin: 40px 0px;
+}
+
+.skill_heading{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 30px 0px;
+}
+
+.image_list ul li{
+    display: inline-block;
+}
+
+.skill_images{
+    height: 60px;
+    width: 60px;
+    margin: 0px 30px;
+}
+
+.skill_para{
+    font-size: 18px;
+    font-weight: 400px;
+    margin-left: 80px;
+}
+
+#contact_section{
+    padding-top: 8%;
+    align-items: center;
+}
+
+.contact_heading{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 50px;
+}
+
+
+.contact_details p{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     transition: all 0.15s;
+     border: 1px solid black;
+     height: 46px;
+     width: 46px;
+     padding-top: 10px;
+     border-radius: 50%;
+     
+}
+.contact_details{
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+} 
+
+.contact_details a{
+    padding: 20px 20px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.contact_details a:hover{
+    text-decoration: underline;
+}
+
+.copyrighticon{
+  height: 10px;
+  width: 10px;
+  padding-top: 8%;
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width: 600px) {
+    #nav-bar{
+        padding-top: 8px ;
+    }
+    .profile_img img{
+        height: 250px;
+        width: 250px;
+        margin-left: 25px;   
+    }
+    .home_details h1{
+        font-size: 40px;
+        font-weight: 600;
+        font-style: bold;
+    }
+    .home_details{
+        margin-top: 40px;
+        margin-left: 20px;
+        
+    }
+    .navbar{
+        margin-top: -15px;
+        align-items: center;
+   }
+    .home_details h3{
+        font-size: 25px;
+    }
+    .navbar-head h1{
+        padding-left: 20px;
+        padding-top: 8px;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    #project_section{
+        padding-top: 18%;
+    }
+    .heading {
+        padding: 10px 0px;
+    }
+    .heading h1{
+        font-size: 40px;
+    }
+    .card{
+        margin: 20px 20px;
+    }
+    #about_section{
+        padding-top: 18%;
+    }
+    .about_heading{
+        margin-bottom: 10px;
+    }
+    .about_para{
+        font-size: 15px;
+    }
+    .about_image{
+        margin-left: 0px;
+        text-align: center;
+    }
+    #about_section img{
+        margin-top: 10%;
+        height: 300px;
+        width: 300px;
+        padding-bottom: 0%;
+        margin-left: 13px;
+    }
+    #skill_section{
+        padding-top: 18%;
+    }
+    
+    .skill_heading{
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .skill_images{
+       margin-top: 10px;
+    }
+    .skill_para{
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: 0px;
+    }
+    #contact_section{
+        padding-top: 18%;
+        align-items: center;
+    }
+
+    .contact_details{
+        margin-left: 10px;
+    }
+    
+    
+
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    
+    
+    .home_details{
+        margin-top: 160px;
+        margin-left: 100px;
+    }
+
+    .profile_img img{
+        height: 350px;
+        width: 350px;
+        margin-left: 20px;   
+    }
+
+    .home_details h1{
+        font-size: 40px;
+    }
+
+    .home_details h3{
+        font-size: 23px;
+    }
+
+    .card{
+        position: relative;
+    }
+
+    .skill_images{
+        margin-top: 15px;
+        text-align: center;
+     }
+
+    #about_section{
+        padding-top: 18%;
+    }
+
+    #about_section img{
+        margin-top: 10%;
+        height: 300px;
+        width: 300px;
+        padding-bottom: 0%;
+        margin-left: 13px;
+    }
+
+    .about_para{
+        font-size: 18px;
+        font-weight: 400px;
+    }
+    .skill_para{
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: -10px;
+    }
+
+    #contact_section{
+        padding-top: 8%;
+        align-items: center;
+    }
+    .contact_details{
+        margin-left: 200px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1074px) {
+    .navbar-details ul{
+        margin-right: 20px;
+    }
+    
+    .navbar-details ul li{
+         margin: 0px 10px;
+    }
+    
+    .navbar-details ul li a{
+        font-size: 18px;
+    }
+
+    .home_details{
+        margin-top: 160px;
+        margin-left: 100px;
+    }
+
+    .profile_img img{
+        height: 380px;
+        width: 380px;
+        margin-left: 60px;   
+    }
+
+    .home_details h1{
+        font-size: 40px;
+    }
+
+    .home_details h3{
+        font-size: 23px;
+    }
+
+    .skill_images{
+        margin-top: 15px;
+        text-align: center;
+     }
+
+
+    #about_section img{
+        margin-top: 2%;
+        height: 350px;
+        width: 350px;
+        margin-left: 50px;
+    }
+    #about_section{
+        padding-top: 10%;
+    }
+    .about_para{
+        font-size: 18px;
+        font-weight: 400px;
+    }
+    .skill_para{
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: -10px;
+    }
+
+    #contact_section{
+        padding-top: 15%;
+        align-items: center;
+    }
+    .contact_details{
+        margin-left: 10px;
+    }
+}
+
+
+
+
+

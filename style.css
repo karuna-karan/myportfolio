@@ -120,17 +120,6 @@ html body{
     border-radius: 30px;
     transition: all 0.28s;
 }
-.project_button:hover{
-    color:white ;
-    background-color: rgb(254, 0, 0) ;
-    border-color: white ;
-}
-
-
-
-
-
-
 
 #project_section{
     padding-top: 10%;
